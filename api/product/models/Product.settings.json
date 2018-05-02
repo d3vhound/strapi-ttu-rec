@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "product",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "multiple": false,
+      "type": "string"
+    },
+    "description": {
+      "multiple": false,
+      "type": "text"
+    },
+    "price": {
+      "multiple": false,
+      "type": "float"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}
